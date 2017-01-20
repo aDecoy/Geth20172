@@ -325,4 +325,4 @@ class PYROSIM:
 
 	def Send(self,stringToSend):
 
-		self.simulator.stdin.write( stringToSend )
+		self.simulator.stdin.write(str.encode(stringToSend)  )
